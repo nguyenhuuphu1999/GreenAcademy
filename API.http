@@ -1,0 +1,338 @@
+GET  http://localhost:9999/booking_test_driving
+
+###
+GET   http://localhost:9999/booking_test_driving/3
+
+###
+POST http://localhost:9999/booking_test_driving
+Content-Type: application/json
+
+{
+    "product_id":1,
+    "customer_name":"Phu Nguyen",
+    "phone_number":"012654896",
+    "email":"150co@gmail.com",
+    "booking_time":"2019-10-10"
+}
+
+###
+PUT  http://localhost:9999/booking_test_driving/3
+Content-Type: application/json
+
+{
+    "product_id":1,
+    "customer_name":"Nguyen Huu Phu",
+    "phone_number":"0369202024",
+    "email":"150co@gmail.com",
+    "booking_time":"2019-10-10"
+}
+
+###
+DELETE  http://localhost:9999/booking_test_driving/4
+
+###################################################################################  Category
+GET  http://localhost:9999/category
+
+###
+GET   http://localhost:9999/category/1
+
+###
+POST http://localhost:9999/category
+Content-Type: application/json
+
+{
+    "product_id":"1",
+    "name":"Huyndai Tucson"
+        
+}
+
+###
+PUT  http://localhost:9999/category/1
+Content-Type: application/json
+
+{
+    "product_id":"2",
+    "name":"Huyndai Tucson"
+}
+
+###
+DELETE  http://localhost:9999/category/2
+
+
+###################################################################################  category
+GET  http://localhost:9999/color
+
+###
+GET   http://localhost:9999/color/1
+
+###
+POST http://localhost:9999/color
+Content-Type: application/json
+
+{
+    "name":"red",
+    "rgb":"255,0,0"
+        
+}
+
+###
+PUT  http://localhost:9999/color/1
+Content-Type: application/json
+
+{
+    "name":"red",
+    "rgb":"255,0,0"
+}
+
+###
+DELETE  http://localhost:9999/color/2
+
+
+###################################################################################  customer
+GET  http://localhost:9999/customer
+
+###
+GET   http://localhost:9999/customer/1
+
+###
+POST http://localhost:9999/customer
+Content-Type: application/json
+
+{
+    "order_id":"1",
+    "name":"Nguyen Huu Phu",
+    "phone_number":"0369202024",
+    "email":"1250co@gmail.com",
+    "payment_method":"card"
+    
+}
+
+###
+PUT  http://localhost:9999/customer/1
+Content-Type: application/json
+
+{
+    "order_id":"1",
+    "name":"Nguyen Huu Phu",
+    "phone_number":"0865452090",
+    "email":"1250co@gmail.com",
+    "payment_method":"card"
+}
+
+###
+DELETE  http://localhost:9999/customer/2
+
+###################################################################################  Detail_each_product
+GET  http://localhost:9999/detail_each_product
+
+###
+GET   http://localhost:9999/detail_each_product/1
+
+###
+POST http://localhost:9999/detail_each_product
+Content-Type: application/json
+
+{
+        "detail_id":"1",
+        "product_id":"1",
+        "description":"mo ta o day nhe",
+        "chassis_number":"1",
+        "engine_number":"1",
+        "color_id":"1",
+        "guarantee":"1"
+}
+
+###
+PUT  http://localhost:9999/detail_each_product/1
+Content-Type: application/json
+
+{
+        "detail_id":"1",
+        "product_id":"1",
+        "description":"mo ta o day nhe",
+        "chassis_number":"1",
+        "engine_number":"1",
+        "color_id":"1",
+        "guarantee":"1"
+}
+
+###
+DELETE  http://localhost:9999/detail_each_product/1
+
+
+###################################################################################  news
+GET  http://localhost:9999/news
+
+###
+GET   http://localhost:9999/news/2
+
+###
+POST http://localhost:9999/news
+Content-Type: application/json
+
+{
+       "title":"Xe moi Mazda3",
+        "description":"Mo ta xe dat o day nhe",
+        "content":"Comtent daay nhe",
+        "image":"Chua co",
+        "date":"2020-10-10"
+}
+
+###
+PUT  http://localhost:9999/news/1
+Content-Type: application/json
+
+{
+        "title":"Xe moi Mazda3",
+        "description":"Mo ta xe dat o day nhe",
+        "content":"Comtent daay nhe",
+        "image":"Chua co",
+        "date":"2020-10-10"
+}
+
+###
+DELETE  http://localhost:9999/news/1
+
+
+
+###################################################################################  order_bill
+GET  http://localhost:9999/order_bill
+
+###
+GET   http://localhost:9999/order_bill/2
+
+###
+POST http://localhost:9999/order_bill
+Content-Type: application/json
+
+{
+        "detail_id":"1",
+        "status":"1",
+        "quantity":"1",
+        "each_product_price":"789456132",
+        "sale_off_percentage":"123",
+        "total_price":"1556596",
+        "order_date":"2000-10-10"
+}
+
+###
+PUT  http://localhost:9999/order_bill/1
+Content-Type: application/json
+
+{
+        "detail_id":"1",
+        "status":"1",
+        "quantity":"1",
+        "each_product_price":"789456132",
+        "sale_off_percentage":"123",
+        "total_price":"1556596",
+        "order_date":"2000-10-10"
+}
+
+###
+DELETE  http://localhost:9999/order_bill/1
+
+
+###################################################################################  product
+GET  http://localhost:9999/product
+
+###
+GET   http://localhost:9999/product/2
+
+###
+POST http://localhost:9999/product
+Content-Type: application/json
+
+{
+    "product_id":"1",
+    "name":"car",
+    "type":"4cho",
+    "price":"46788",
+    "image":"chua co",
+    "quantity":"1",
+    "status":"1",
+    "description":"khong co",
+    "alias":"/"
+}
+
+###
+PUT  http://localhost:9999/product/1
+Content-Type: application/json
+
+{
+    "product_id":"1",
+    "name":"car",
+    "type":"4cho",
+    "price":"46788",
+    "image":"chua co",
+    "quantity":"1",
+    "status":"1",
+    "description":"khong co",
+    "alias":"/"
+}
+
+###
+DELETE  http://localhost:9999/product/1
+
+###################################################################################  promotion
+GET  http://localhost:9999/promotion
+
+###
+GET   http://localhost:9999/promotion/2
+
+###
+POST http://localhost:9999/promotion
+Content-Type: application/json
+
+{
+        "quantity":"1",
+        "start_date":"2020-10-20",
+        "end_date":"2020-8-10",
+        "sale_off_percentage":"12"
+}
+
+###
+PUT  http://localhost:9999/promotion/1
+Content-Type: application/json
+
+{
+        "quantity":"1",
+        "start_date":"2020-10-20",
+        "end_date":"2020-8-10",
+        "sale_off_percentage":"12"
+}
+###
+DELETE  http://localhost:9999/promotion/1
+
+###################################################################################  theme_banner
+GET  http://localhost:9999/theme_banner
+
+###
+GET   http://localhost:9999/theme_banner/2
+
+###
+POST http://localhost:9999/theme_banner
+Content-Type: application/json
+
+{
+   
+    "title":"xe moi",
+    "images":"./",
+    "status":"1"
+}
+
+###
+PUT  http://localhost:9999/theme_banner/1
+Content-Type: application/json
+
+{
+     "product_id":"1",
+    "title":"xe moi",
+    "images":"./",
+    "status":"12"
+}
+###
+DELETE  http://localhost:9999/theme_banner/1
+
+
+

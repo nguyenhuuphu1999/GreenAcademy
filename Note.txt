@@ -1,0 +1,1 @@
+Alter TABLE category ADD COLUMN `id` int PRIMARY KEY not null AUTO_INCREMENT
