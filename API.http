@@ -334,5 +334,27 @@ Content-Type: application/json
 ###
 DELETE  http://localhost:9999/theme_banner/1
 
+######################################## Nguoi dung
 
+POST http://localhost:9999/nguoi_dung
+Content-Type: application/json
 
+{  
+    "id_quyen":1,
+    "ho_ten":"nguyen huu Phu",
+    "ten_dang_nhap":"ban_xe",
+    "mat_khau":"lamgicopass",
+    "email":"nhp2132+2@gmail.com",
+    "ngay_tao":"2021-03-11",
+    "lan_dang_nhap_cuoi":"2021-03-11",
+    "trang_thai":1
+}
+
+#####
+POSt  http://localhost:9999/nguoi_dung/login
+Content-Type: application/json
+
+{
+     "email":"nhp2132+1@gmail.com",
+      "mat_khau":"lamgicopass"
+}

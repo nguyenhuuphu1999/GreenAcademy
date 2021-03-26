@@ -32,6 +32,7 @@ Router.get('/:id',async (req,res) => {
 })
 
 Router.post('/', async (req,res) =>{
+    console.log(req.body)
     const result =await News.create({
       
         title:req.body.title,

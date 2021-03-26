@@ -1,1 +1,9 @@
 Alter TABLE category ADD COLUMN `id` int PRIMARY KEY not null AUTO_INCREMENT
+
+fix data
+Product nam trong category
+autoIncrement:true -> add them vao muc id:pirmary key
+page gi load
+full text search ==> search theo cum tu
+function delay ==> 
+auto comlist

@@ -17,6 +17,7 @@ var Order_bill = require('./routes/Order_bill/Order_bill')
 var Product = require('./routes/Product/Product')
 var Promotion = require('./routes/Promotion/Promotion')
 var Theme_banner = require('./routes/Theme_banner/Theme_banner')
+var Nguoi_dung = require('./routes/Nguoi_dung/Nguoi_dung')
 
 
 // view engine setup
@@ -41,7 +42,7 @@ app.use('/order_bill',Order_bill)
 app.use('/product',Product)
 app.use('/promotion',Promotion)
 app.use('/theme_banner',Theme_banner)
-
+app.use('/nguoi_dung',Nguoi_dung)
 
 
 // catch 404 and forward to error handler
